@@ -150,16 +150,18 @@ label {
 .barra {
     background: rgba(255, 255, 255, 0.15);
     height: 20px;
-    width: 100%;
-    max-width: 400px;   /* limite de largura */
+    width: 90%;          /* ocupa 90% do espaço */
+    max-width: 400px;    /* limite máximo */
     border-radius: 8px;
     overflow: hidden;
-    margin: 16px auto;  /* centraliza */
+    margin: 16px auto;   /* centraliza */
+    position: relative;
 }
 
 .forca {
     height: 100%;
     border-radius: 8px;
+    max-width: 100%;     /* nunca passa da barra */
 }
 
 .fraca {
