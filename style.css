@@ -2,10 +2,10 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: linear-gradient(135deg, #ff758c, #ff7e5f, #feb47b); /* degradê rosa-alaranjado mais forte */
-    --fundo-senha: #f7a1a1;
-    --fundo-texto: #d97e5f;
-    --borda: #ff5c5c;
+    --cor-de-fundo: linear-gradient(135deg, #ff8aa2, #ff6f91, #ff4d8c); /* degradê rosado suave */
+    --fundo-senha: #ff7ea9;
+    --fundo-texto: #ff5c8a;
+    --borda: #ff3d7a;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .parametro-senha__botao {
-    background: linear-gradient(135deg, #ff758c, #ff7e5f); /* botões rosa/laranja */
+    background: linear-gradient(135deg, #ff8aa2, #ff6f91); /* botões em degradê rosado */
     color: var(--branco);
     border: 2px solid var(--borda);
     padding: 16px 20px;
@@ -102,15 +102,15 @@ body {
     transition: background 0.3s, transform 0.2s;
 }
 
-/* Efeito ao passar o mouse */
+/* Hover dos botões */
 .parametro-senha__botao:hover {
-    background: linear-gradient(135deg, #ff5c8a, #ff6a3d);
+    background: linear-gradient(135deg, #ff6f91, #ff4d8c);
     transform: scale(1.05);
 }
 
-/* Efeito ao clicar */
+/* Clique nos botões */
 .parametro-senha__botao:active {
-    background: linear-gradient(135deg, #e94e77, #d85632);
+    background: linear-gradient(135deg, #ff4d8c, #ff3d7a);
     transform: scale(0.95);
 }
 
