@@ -4,7 +4,7 @@
     --branco: white;
     --cor-de-fundo: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* mesmo degradê dos botões */
     --fundo-senha: #ffd6da;
-    --fundo-texto: #faddc8;
+    --fundo-texto: #ffe3c3;
     --borda: #ffbfa0;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
@@ -102,13 +102,11 @@ body {
     transition: background 0.3s, transform 0.2s;
 }
 
-/* Hover dos botões */
 .parametro-senha__botao:hover {
     background: linear-gradient(135deg, #ffc4d0, #ffd6a8);
     transform: scale(1.05);
 }
 
-/* Clique nos botões */
 .parametro-senha__botao:active {
     background: linear-gradient(135deg, #ffb3c1, #ffc28c);
     transform: scale(0.95);
@@ -132,11 +130,13 @@ label {
     cursor: pointer;
 }
 
-/* Barra de senha igual ao original */
+/* Barra de senha com degradê */
 .barra {
-    background-color: var(--fundo-senha);
+    background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 50%, #fbc2eb 100%);
     height: 30px;
     width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .forca {
@@ -151,13 +151,13 @@ label {
 }
 
 .media {
-    background-color: #FAF408;
     width: 50%;
+    background-color: #FAF408;
 }
 
 .forte {
-    background-color: #00FF85;
     width: 100%;
+    background-color: #00FF85;
 }
 
 .parametro-senha-textos {
