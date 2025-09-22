@@ -2,7 +2,7 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* rosa pastel → laranja pastel */
+    --cor-de-fundo: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* mesmo degradê dos botões */
     --fundo-senha: #ffd6da;
     --fundo-texto: #ffe3c3;
     --borda: #ffbfa0;
@@ -92,7 +92,7 @@ body {
 }
 
 .parametro-senha__botao {
-    background: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* botões rosa → laranja pastel */
+    background: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* degradê salmão pastel */
     color: var(--branco);
     border: 2px solid var(--borda);
     padding: 16px 20px;
