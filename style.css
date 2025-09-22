@@ -2,10 +2,10 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: linear-gradient(135deg, #ffd1c1, #ffbfa6, #ffab8f); /* degradê salmão claro */
-    --fundo-senha: #ffc9b3;
-    --fundo-texto: #ffb99d;
-    --borda: #ffa07a;
+    --cor-de-fundo: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* rosa pastel → laranja pastel */
+    --fundo-senha: #ffd6da;
+    --fundo-texto: #ffe3c3;
+    --borda: #ffbfa0;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .parametro-senha__botao {
-    background: linear-gradient(135deg, #ffd1c1, #ffbfa6); /* degradê salmão claro */
+    background: linear-gradient(135deg, #ffd1dc, #ffe0b2); /* botões rosa → laranja pastel */
     color: var(--branco);
     border: 2px solid var(--borda);
     padding: 16px 20px;
@@ -104,13 +104,13 @@ body {
 
 /* Hover dos botões */
 .parametro-senha__botao:hover {
-    background: linear-gradient(135deg, #ffbfa6, #ffab8f);
+    background: linear-gradient(135deg, #ffc4d0, #ffd6a8);
     transform: scale(1.05);
 }
 
 /* Clique nos botões */
 .parametro-senha__botao:active {
-    background: linear-gradient(135deg, #ffab8f, #ff9973);
+    background: linear-gradient(135deg, #ffb3c1, #ffc28c);
     transform: scale(0.95);
 }
 
