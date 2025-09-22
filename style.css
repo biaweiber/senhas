@@ -1,66 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root {
-    --branco: #fdfdfd;
-    --cor-de-fundo: #f0f2f5;
-    --fundo-senha: rgba(255, 255, 255, 0.2);
-    --fundo-texto: rgba(255, 255, 255, 0.15);
-    --borda: rgba(255, 255, 255, 0.4);
-    --roboto: 'Inter', sans-serif;
+    --branco: white;
+    --cor-de-fundo: linear-gradient(135deg, #ff758c, #ff7e5f, #feb47b); /* degradê rosa-alaranjado mais forte */
+    --fundo-senha: #f7a1a1;
+    --fundo-texto: #d97e5f;
+    --borda: #ff5c5c;
+    --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
 * {
     font-weight: 400;
-    transition: all 0.3s ease-in-out;
 }
 
 body {
-    color: #222;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 40%, #fbc2eb 70%, #f6d365 100%);
+    color: var(--branco);
+    background: var(--cor-de-fundo);
     font-family: var(--roboto);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
 }
 
 .titulo-principal {
     font-family: var(--roboto-mono);
-    font-size: 36px;
-    font-weight: 600;
-    color: #fff;
+    font-size: 32px;
 }
 
 .titulo-secundario {
-    font-size: 22px;
-    color: #f1f1f1;
+    font-size: 24px;
 }
 
 .conteudo-titulo {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .conteudo-senha {
-    margin-top: 40px;
+    margin-top: 80px;
     background: var(--fundo-senha);
-    backdrop-filter: blur(12px);
     padding: 24px;
-    border-radius: 16px;
-    border: 1px solid var(--borda);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-bottom: 6px solid var(--borda);
 }
 
 #campo-senha {
-    background: transparent;
+    background-color: var(--fundo-senha);
     border: none;
-    color: #fff;
+    color: var(--branco);
     font-family: var(--roboto-mono);
-    font-size: 36px;
-    width: 100%;
-    text-align: center;
+    font-size: 40px;
+    width: 70%;
 }
 
 #campo-senha:focus {
@@ -68,76 +55,75 @@ body {
 }
 
 .conteudo {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .parametro {
-    background: var(--fundo-texto);
-    border: 1px solid var(--borda);
-    border-radius: 12px;
-    margin-top: 24px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
 }
 
 .parametro-titulo {
     font-family: var(--roboto-mono);
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 16px;
+    font-size: 28px;
 }
 
 .parametro-senha__titulo {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #fff;
+    font-size: 24px;
 }
 
 .parametro-coluna__senha {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: center;
 }
 
 .parametro-senha {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .parametro-senha-botoes {
     display: flex;
     justify-content: center;
-    gap: 12px;
 }
 
 .parametro-senha__botao {
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    border: 1px solid var(--borda);
+    background: linear-gradient(135deg, #ff758c, #ff7e5f); /* botões rosa/laranja */
+    color: var(--branco);
+    border: 2px solid var(--borda);
     padding: 16px 20px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
 }
 
+/* Efeito ao passar o mouse */
 .parametro-senha__botao:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, #ff5c8a, #ff6a3d);
+    transform: scale(1.05);
+}
+
+/* Efeito ao clicar */
+.parametro-senha__botao:active {
+    background: linear-gradient(135deg, #e94e77, #d85632);
+    transform: scale(0.95);
 }
 
 .parametro-senha__texto {
-    padding: 16px;
-    border-top: 1px solid var(--borda);
-    border-bottom: 1px solid var(--borda);
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
     margin: 0;
-    font-size: 18px;
-    color: #f1f1f1;
+    font-size: 24px;
 }
 
 label {
-    font-size: 18px;
-    color: #fff;
+    font-size: 20px;
 }
 
 .checkbox {
@@ -146,7 +132,7 @@ label {
     cursor: pointer;
 }
 
-/* --- Barra de força da senha (EXATAMENTE COMO O ORIGINAL) --- */
+/* Barra de senha igual ao original */
 .barra {
     background-color: var(--fundo-senha);
     height: 30px;
@@ -177,9 +163,6 @@ label {
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    color: #ddd;
-    margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
