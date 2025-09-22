@@ -146,13 +146,15 @@ label {
     cursor: pointer;
 }
 
+/* --- Barra de força da senha --- */
 .barra {
     background: rgba(255, 255, 255, 0.15);
     height: 20px;
     width: 100%;
+    max-width: 400px;   /* limite de largura */
     border-radius: 8px;
     overflow: hidden;
-    margin-top: 12px;
+    margin: 16px auto;  /* centraliza */
 }
 
 .forca {
